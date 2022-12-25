@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+
 
   <title>Resume - Start Bootstrap Theme</title>
 
@@ -20,6 +21,44 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+  
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  
+  <!-- Demo Styles -->
+  <style>
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper.container {
+      width: 100%;
+      height: 300px;
+      margin: 20px auto;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      width: 250px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
 
 </head>
 
@@ -150,6 +189,27 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center overflow-hidden" id="interests">
       <div class="w-100">
         <h2 class="mb-5">프로젝트</h2>
+        <!-= Swiper -->
+        <div class="swiper-container">
+          <div class="swiper=wrapper">
+            <div class="swiper-slide" Slide 1 </div>
+            <div class="swiper-slide" Slide 2 </div>
+          </div>
+          <!-- Add Scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="js/swiper.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper('.swiper-container',{
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30
+          });
+        </script>
         <img src="img/003.jpg" alt="" style="margin-left: -30px; width:130%; height:auto;">
         <img src="img/004.jpg" alt="" style="margin-left: -30px; width:130%; height:auto;">
         <img src="img/005.jpg" alt="" style="margin-left: -30px; width:130%; height:auto;">
